@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+$inside_input_color: #0b2336;
+$body_wrapper_color: #091921;
+$border_input_color: #0e2f49;
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    font-family: poppins, sans-serif;
+}
+.body_wrapper{
+    padding: 16px;
+    background-color: #091921;
+    // height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    color: white;
+    font-size: 5em;
+}
+.form_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 3px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(2rem);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 5px;
+}
+.wrapper>input{
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0px solid white;
+    padding: 8px;
+}
+textarea{
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0px solid white;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+select{
+    margin-bottom: 16px;
+}
+.todos_wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    margin: 8px;
+}
+.todo_big_wrapper{
+    width: 100%;
+    margin: 16px;
+}
+.todo{
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(2rem);
+    border-radius: 5px;
+    padding: 16px;
+}
+.todo_operations{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.todo_operations>*{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    margin: 2px 16px;
+    cursor: pointer;
+}
+.todos_header{
+    color: white;
+    font-size: 4em;
+}

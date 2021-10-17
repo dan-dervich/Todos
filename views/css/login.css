@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  font-family: poppins, sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #091921;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form > * {
+  margin: 16px;
+}
+
+form > input[type=email] {
+  background-color: #0b2336;
+  padding: 8px;
+  border-radius: 2px;
+  font-size: 22px;
+  border: 2px solid #0e2f49;
+  color: #fff;
+}
+
+form > input[type=submit] {
+  background-color: #091921;
+  color: white;
+  border: 2px solid #113957;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=login.css.map */

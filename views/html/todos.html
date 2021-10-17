@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/views/css/todos.css" />
+  </head>
+  <body>
+    <div class="body_wrapper">
+      <main>
+        <h1 class="header">To-do</h1>
+        <div class="form_wrapper">
+          <form action="/posts/create" method="post">
+            <div class="input_wrapper">
+              <div class="wrapper">
+                <label for="todo_name">Todo Name</label>
+                <input
+                  type="text"
+                  name="todo_name"
+                  placeholder="todo name"
+                  required
+                />
+              </div>
+              <div class="wrapper">
+                <label for="todo">Todo</label>
+                <textarea
+                  name="todo"
+                  cols="40"
+                  rows="6"
+                  placeholder="Todo"
+                ></textarea>
+              </div>
+            </div>
+            <select name="time_to_expire" required>
+              <option value="daily">1 Day</option>
+              <option value="weekly">1 Week</option>
+              <option value="monthly">1 Month</option>
+              <option value="yearly">1 Year</option>
+            </select>
+            <input type="submit" value="Create New Todo" />
+          </form>
+        </div>
+      </main>
+      <div class="todos_wrapper" id="todos_area"></div>
+    </div>
+    <script src="/views/js/todos.js"></script>
+  </body>
+</html>
